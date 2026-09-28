@@ -89,9 +89,20 @@ connecté sur **PseudoCo-Corp en 6 GHz**, AP CW9178I, WLC `LDN1-C9800-01`, score
 
 ## Acte 2 — « Grace, ou tout l'étage ? » (5 min)
 
-🖱️ **Assurance > Issues and Events > Issues**. Activer le filtre **AI Driven**.
+🖱️ **Assurance > Issues and Events > Issues**. Cliquer d'abord sur **P1** : *Total Open: 4*.
 
-> 🎤 « Trois tickets du même étage, ça sent le problème collectif. Les issues marquées **AI** ne reposent pas sur des seuils fixes : Catalyst Center apprend ce qui est *normal* pour **chaque** SSID, **chaque** bâtiment, **chaque** heure — et alerte quand on sort de cette normale. Fini les seuils statiques qui sonnent tout le temps ou jamais. »
+| P1 | Issue Type | Device Role | Category |
+|---|---|---|---|
+| P1 | Interface Connecting Network Devices is Down | DISTRIBUTION | Connectivity |
+| P1 | Layer 2 loop symptoms | DISTRIBUTION | Connectivity |
+| P1 | Switch unreachable | BORDER ROUTER | Availability |
+| P1 | Fabric Devices Connectivity – DHCP Underlay | BORDER ROUTER | Connected |
+
+> 🎤 « Premier constat : les 4 P1 du réseau sont **tous filaires**, boucle L2, border router injoignable… Si je regarde mon outil de supervision classique, **le Wi-Fi n'existe pas** : il n'y a pas de lien down, pas d'équipement injoignable. Et pourtant trois personnes n'arrivent pas à se connecter. Une dégradation d'expérience, ce n'est pas une panne — il faut une autre façon de la détecter. »
+
+🖱️ Revenir sur **All**, puis activer le toggle **AI-Driven** → *Total Open: 5*, toutes en **P2** : *Excessive failures to connect*, *Excessive time to connect*, *Excessive time to get an IP Address* (WIRELESS / Onboarding), *Drop in radio throughput for Cloud Applications*, *Drop in total radio throughput* (ACCESS POINT).
+
+> 🎤 « Trois tickets du même étage, ça sent le problème collectif. Et voilà ce que les seuils statiques ne voyaient pas : **5 issues wireless**, repérées par l'IA. Les issues marquées **AI** ne reposent pas sur des seuils fixes : Catalyst Center apprend ce qui est *normal* pour **chaque** SSID, **chaque** bâtiment, **chaque** heure — et alerte quand on sort de cette normale. Fini les seuils statiques qui sonnent tout le temps ou jamais. »
 
 🖱️ Ouvrir **Excessive failures to connect – High deviation from baseline** → l'instance **« At least 11% increase in failures on SSID PseudoCo-Corp in London 1/1st Floor »**.
 
@@ -118,7 +129,7 @@ connecté sur **PseudoCo-Corp en 6 GHz**, AP CW9178I, WLC `LDN1-C9800-01`, score
 
 ### 2.4 (Option) Le détail chiffré d'une connexion
 
-🖱️ Retour **Issues** → **Wireless client took a long time to connect (… CW9166I-LDN1-01, 2.4 GHz) – Excessive time due to Association failures** → ouvrir l'instance.
+🖱️ Retour **Issues** → désactiver **AI-Driven**, passer la plage de temps sur **7 days** (sinon l'issue n'apparaît pas) → **Wireless client took a long time to connect (… CW9166I-LDN1-01, 2.4 GHz) – Excessive time due to Association failures** → ouvrir l'instance.
 
 > 🎤 « Le détail d'une seule connexion : **123 secondes** pour se connecter, au lieu de moins de 10. Auth : 1,4 s, IP : 1,2 s — ce n'est donc pas une lenteur, ce sont des **échecs puis des retries**. Et la suggestion n°4 pointe déjà le serveur AAA **192.168.139.168** pendant la MAC Authentication. »
 
@@ -126,7 +137,7 @@ connecté sur **PseudoCo-Corp en 6 GHz**, AP CW9178I, WLC `LDN1-C9800-01`, score
 
 ## Acte 3 — « Prouve-le » : Machine Reasoning (4 min)
 
-🖱️ **Issues** → **(P3) Wireless clients failed to connect – AAA Server Rejected Clients** (SSID PseudoCo-Corp, AP CW9166I-LDN1-02, 2.4 GHz).
+🖱️ **Issues** (plage **7 days**, onglet **P3**) → **(P3) Wireless clients failed to connect – AAA Server Rejected Clients** (SSID PseudoCo-Corp, AP CW9166I-LDN1-02, 2.4 GHz).
 
 > 🎤 « Le problème d'un ingé réseau, c'est souvent de **prouver que ce n'est pas le réseau**. Ici, un client rejeté — *Sargio.Villa*, un poste Linux, même étage. »
 
@@ -233,6 +244,7 @@ connecté sur **PseudoCo-Corp en 6 GHz**, AP CW9178I, WLC `LDN1-C9800-01`, score
 - Le dashlet **Summary** de User 360 est **statique** (identique pour tous les clients) : ne pas s'y attarder.
 - Seuls `Grace.Smith-iPad` et `Grace Smith Galaxy-S23` ont des **issues** dans Client 360 ; les autres affichent « no data ».
 - L'AI Assistant ne répond qu'aux prompts listés dans le guide (dont « Troubleshoot a specific client » → `grace smith` et « Troubleshoot a specific access point » → `CW9178I-LDN1-01`).
+- Dans **Issues**, le filtre **P1** ne montre que 4 issues filaires : les issues wireless sont en **P2 (AI-Driven)** et **P3**. Les issues *long time to connect* et *AAA Server Rejected* demandent la plage **7 days**.
 - Sur `grace smith`, l'assistant analyse **l'iPhone** (sain, 6 GHz), pas l'iPad : c'est voulu dans le script (acte 1.1), ne pas chercher à obtenir l'iPad via l'assistant.
 - Les noms d'AP diffèrent légèrement selon les écrans (CW9178I-LDN1-01, CW9166I-LDN1-01…) : l'histoire tient car **tout est London 1 / 1st Floor / PseudoCo-Corp / 2.4 GHz**.
 
