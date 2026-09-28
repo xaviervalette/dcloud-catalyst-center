@@ -73,6 +73,10 @@ connecté sur **PseudoCo-Corp en 6 GHz**, AP CW9178I, WLC `LDN1-C9800-01`, score
 
 > 🎤 « Une issue **P1 – Onboarding** : *Wireless client took a long time to connect (SSID PseudoCo-Corp, AP CW9178I-LDN1-01, 2.4 GHz) – Excessive time due to Association failures*. **3 occurrences.** Le ticket de Grace est confirmé et qualifié : c'est de l'onboarding, en 2.4 GHz. »
 
+🖱️ Cliquer sur l'issue (depuis la fiche de Grace — c'est **ce chemin** qui prouve que l'incident concerne bien son iPad) → **Description**.
+
+> 🎤 « Le détail : **123,4 secondes** pour se connecter, au lieu de moins de 10. Et pourtant chaque étape est rapide — association 0 s, authentification 1,4 s, adressage IP 1,2 s. L'explication est la dernière ligne : **2 tentatives, 120,8 secondes**. Ce n'est pas une lenteur, c'est un **échec suivi d'un retry**. Côté utilisateur, ça se traduit par "le Wi-Fi met des plombes". »
+
 ### 1.5 Éliminer le suspect n°1 : la couverture
 
 🖱️ **Summary > Connectivity > RSSI → View Details** (RSSI 100 % Good), puis onglet **RF → Per Band**.
@@ -136,11 +140,11 @@ La liste passe à **9 P1**. Aux 4 filaires s'ajoutent notamment *WLC unreachable
 
 > 🎤 « Sur 7 jours, le ticket de Grace remonte **en P1** : même SSID, même AP **CW9178I-LDN1-01**, même bande 2.4 GHz que dans son Client 360. Ce n'est pas un simple ressenti, c'est un incident priorisé par la plateforme. »
 
-🖱️ Ouvrir l'issue → l'instance → **Description** + **Suggested Actions**.
+🖱️ Ouvrir l'issue → l'instance → descendre sur **Suggested Actions (4)**.
 
-> 🎤 « Le détail d'une connexion : durée totale d'onboarding versus la durée attendue, découpée par étape — association, authentification, adressage IP. Les étapes prises une à une sont rapides : ce n'est donc pas une lenteur, ce sont des **échecs puis des retries**. Et les actions suggérées pointent déjà le serveur AAA pendant la MAC Authentication. »
+> 🎤 « C'est l'incident qu'on a vu tout à l'heure sur la fiche de Grace. Ce qui m'intéresse maintenant, ce sont les **4 actions suggérées** : vérifier le nombre de clients sur la radio, les conditions RF, le roaming… et la n°4 : *vérifier que le serveur AAA **192.168.139.168** répond pendant la MAC Authentication*. L'outil pointe déjà la piste qu'on va confirmer. »
 
-> ⚠️ Chiffres à relever sur votre instance avant la démo. Dans le guide (capture de l'AP CW9166I-LDN1-01) : onboarding **123,4 s** au lieu de < 10 s, auth 1,4 s, IP 1,2 s, AAA **192.168.139.168**.
+> ⚠️ Ne pas montrer les colonnes du panneau latéral : **Site = Global** et **Client Count vide** dans la démo simulée. L'instance n'affiche que *Description* et *Suggested Actions*, sans liste de clients impactés : le lien avec Grace se fait **depuis son Client 360** (acte 1.4), pas depuis l'issue.
 
 > 💡 **Accroche optionnelle** : la P1 *Fabric Devices Connectivity – ISE Server* est visible dans la même liste. Pour une audience avancée : « Tiens, un problème de connectivité vers ISE… et nos clients échouent en AAA. On va vérifier. » → enchaîner sur l'acte 3. (Lien narratif, pas une corrélation démontrée par l'outil.)
 
@@ -256,6 +260,7 @@ La liste passe à **9 P1**. Aux 4 filaires s'ajoutent notamment *WLC unreachable
 - Seuls `Grace.Smith-iPad` et `Grace Smith Galaxy-S23` ont des **issues** dans Client 360 ; les autres affichent « no data ».
 - L'AI Assistant ne répond qu'aux prompts listés dans le guide (dont « Troubleshoot a specific client » → `grace smith` et « Troubleshoot a specific access point » → `CW9178I-LDN1-01`).
 - Dans **Issues**, sur **24 h** le filtre **P1** ne montre que 4 issues filaires ; les issues wireless IA sont en **P2 (AI-Driven)**. Sur **7 days**, on passe à 9 P1 dont la P1 wireless de Grace (CW9178I-LDN1-01), et l'issue *AAA Server Rejected* (P3) devient visible.
+- L'issue P1 wireless n'affiche **ni client impacté ni Client Count** (Site = Global) : le lien avec Grace se fait uniquement via son **Client 360 > Issues**.
 - Sur `grace smith`, l'assistant analyse **l'iPhone** (sain, 6 GHz), pas l'iPad : c'est voulu dans le script (acte 1.1), ne pas chercher à obtenir l'iPad via l'assistant.
 - Les noms d'AP diffèrent légèrement selon les écrans (CW9178I-LDN1-01, CW9166I-LDN1-01…) : l'histoire tient car **tout est London 1 / 1st Floor / PseudoCo-Corp / 2.4 GHz**.
 
