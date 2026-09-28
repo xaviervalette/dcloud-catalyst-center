@@ -1,0 +1,995 @@
+{
+  "source": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/",
+  "scraped_at": "2026-09-28T09:26:16+0200",
+  "pages": [
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/",
+      "title": "Cisco Catalyst Center 3.2.3 Instant Demo",
+      "section": "home",
+      "file": "pages/index.md",
+      "headings": [
+        "Cisco Catalyst Center 3.2.3 Instant Demo",
+        "Authors",
+        "What's New",
+        "Overview",
+        "Storylines",
+        "Design",
+        "Provision",
+        "Assurance",
+        "Policy"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/home/start_here/",
+      "title": "Introduction",
+      "section": "home",
+      "file": "pages/home/start_here.md",
+      "headings": [
+        "Environment",
+        "Credentials",
+        "Reset The Demo"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/home/try_new_homepage/",
+      "title": "New Home Page",
+      "section": "home",
+      "file": "pages/home/try_new_homepage.md",
+      "headings": [
+        "New Home Page"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/scenarios/sda-fabric/",
+      "title": "SDA Fabric Provisioning",
+      "section": "scenarios",
+      "file": "pages/scenarios/sda-fabric.md",
+      "headings": [
+        "Step 1: Introductions",
+        "Step 2: Design",
+        "Step 3: Provision"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/scenarios/ai-assistant/",
+      "title": "AI Assistant",
+      "section": "scenarios",
+      "file": "pages/scenarios/ai-assistant.md",
+      "headings": [
+        "AI Assistant",
+        "Supported AI Prompts"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/design/network_hierarchy/",
+      "title": "Network Hierarchy in PseudoCo",
+      "section": "design",
+      "file": "pages/design/network_hierarchy.md",
+      "headings": [
+        "Network Hierarchy in PseudoCo",
+        "Introduction",
+        "Overview of Network Hierarchy",
+        "Visualizing Floor Maps & Heat Maps",
+        "Exploring 3D Map Views",
+        "Interactive Map Walkthrough",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/design/network_profiles/",
+      "title": "Design - Network Profiles Guide",
+      "section": "design",
+      "file": "pages/design/network_profiles.md",
+      "headings": [
+        "Design - Network Profiles Guide",
+        "Table of Contents",
+        "Overview",
+        "Accessing Network Profiles",
+        "Assigning a Site to a Network Profile",
+        "Notes & Best Practices"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/design/sp_profiles/",
+      "title": "Service Provider Profiles",
+      "section": "design",
+      "file": "pages/design/sp_profiles.md",
+      "headings": [
+        "Service Provider Profiles",
+        "Part 1: Accessing and Managing Service Provider Profiles",
+        "Notes"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/design/server_settings/",
+      "title": "Network Settings – Servers Tab",
+      "section": "design",
+      "file": "pages/design/server_settings.md",
+      "headings": [
+        "Network Settings – Servers Tab",
+        "Introduction",
+        "Step 1: Accessing Network Settings",
+        "Step 2: Viewing the Servers Tab",
+        "Step 3: Viewing Site Credentials",
+        "Step 4: Searching and Selecting Sites",
+        "Step 5: Configuring External Network Servers",
+        "Step 6: Configuring DNS, Image Distribution, and NTP",
+        "Step 7: Time Zone and Message of the Day Configuration",
+        "Summary"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/design/device_credentials/",
+      "title": "Managing Device Credentials in Network Settings",
+      "section": "design",
+      "file": "pages/design/device_credentials.md",
+      "headings": [
+        "Managing Device Credentials in Network Settings",
+        "Step 1: Access Network Settings",
+        "Step 2: Open the Device Credentials Tab",
+        "Step 3: View Site Credentials",
+        "Step 4: Search and Select Sites",
+        "Note"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/design/security_trust/",
+      "title": "Security and Trust – Network Settings",
+      "section": "design",
+      "file": "pages/design/security_trust.md",
+      "headings": [
+        "Security and Trust – Network Settings",
+        "Steps to Configure Security and Trust Settings",
+        "Summary"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/design/ip_pools/",
+      "title": "IP Address Pools",
+      "section": "design",
+      "file": "pages/design/ip_pools.md",
+      "headings": [
+        "IP Address Pools",
+        "Introduction",
+        "Steps",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/design/wireless_design/",
+      "title": "Wireless Network Design",
+      "section": "design",
+      "file": "pages/design/wireless_design.md",
+      "headings": [
+        "Wireless Network Design",
+        "1. Accessing Wireless Network Settings",
+        "2. Selecting a Location",
+        "3. Viewing SSIDs",
+        "Summary"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/design/cli_templates/",
+      "title": "Cisco CLI Templates",
+      "section": "design",
+      "file": "pages/design/cli_templates.md",
+      "headings": [
+        "Cisco CLI Templates",
+        "Introduction",
+        "Step 1: Navigating to CLI Templates",
+        "Step 2: CLI Templates Landing Page",
+        "Step 3: Using Filters",
+        "Step 4: Applying Multiple Filters",
+        "Step 5: Searching for Templates",
+        "Step 6: Viewing Template Details",
+        "Step 7: Template View and Properties",
+        "Step 8: System Variables Assistant",
+        "Step 9: Viewing Template History",
+        "Step 10: Adding a Project or Template",
+        "Step 11: Creating a New Project",
+        "Step 12: Adding a Template to a Project",
+        "Step 13: Accessing the Template Page",
+        "Step 14: Reviewing Your Newly Created Template",
+        "Step 15: Editing Templates and Projects",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/design/image_mgmt/",
+      "title": "Device Image Repository – Golden Image Use Case",
+      "section": "design",
+      "file": "pages/design/image_mgmt.md",
+      "headings": [
+        "Device Image Repository – Golden Image Use Case",
+        "Introduction",
+        "Steps",
+        "Summary"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/inventory/",
+      "title": "Catalyst Center Inventory Page",
+      "section": "provision",
+      "file": "pages/provision/inventory.md",
+      "headings": [
+        "Catalyst Center Inventory Page",
+        "Introduction",
+        "Inventory Page Overview",
+        "Using Filters",
+        "Additional Page Views",
+        "Summary"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/device_details/",
+      "title": "Device Details Page",
+      "section": "provision",
+      "file": "pages/provision/device_details.md",
+      "headings": [
+        "Device Details Page",
+        "Introduction",
+        "Accessing the Device Details Page",
+        "Navigating the Device Details Page",
+        "Special Features for WLC Devices",
+        "Summary"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/device-discovery/",
+      "title": "Device Discovery and Provisioning Guide",
+      "section": "provision",
+      "file": "pages/provision/device-discovery.md",
+      "headings": [
+        "Device Discovery and Provisioning Guide",
+        "Navigating to the Tools & Discovery Page",
+        "Discovery Actions",
+        "Assigning Discovered Devices to a Site",
+        "Provisioning a Discovered Device",
+        "Creating a New Site (Network Hierarchy)"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/topology/",
+      "title": "Topology View in Cisco Catalyst Center",
+      "section": "provision",
+      "file": "pages/provision/topology.md",
+      "headings": [
+        "Topology View in Cisco Catalyst Center",
+        "Step 1: Accessing the Inventory and Topology View",
+        "Step 2: Inspecting Physical Links",
+        "Step 3: Viewing Device Details",
+        "Step 4: Collapsing the View",
+        "Step 5: Navigating to Device Details Page"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/pnp/",
+      "title": "Cisco Plug and Play (PnP) Demo Guide",
+      "section": "provision",
+      "file": "pages/provision/pnp.md",
+      "headings": [
+        "Cisco Plug and Play (PnP) Demo Guide",
+        "Introduction",
+        "Table of Contents",
+        "Claiming and Provisioning a WLC Device",
+        "Claiming and Provisioning a Switch",
+        "Notes"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/lan_automation/",
+      "title": "LAN Automation Demo Guide",
+      "section": "provision",
+      "file": "pages/provision/lan_automation.md",
+      "headings": [
+        "LAN Automation Demo Guide",
+        "Introduction",
+        "LAN Automation Workflow"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/avc/",
+      "title": "Application Visibility (AVC) - Network Devices Enablement Guide",
+      "section": "provision",
+      "file": "pages/provision/avc.md",
+      "headings": [
+        "Application Visibility (AVC) - Network Devices Enablement Guide",
+        "Provision > Services > Application Visibility > Network Devices Enablement"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/swim/",
+      "title": "Software Image Management (SWIM) Demo Guide",
+      "section": "provision",
+      "file": "pages/provision/swim.md",
+      "headings": [
+        "Software Image Management (SWIM) Demo Guide",
+        "Introduction",
+        "Use Case",
+        "Step 1: Select Software Images Focus",
+        "Step 2: Select Target Devices",
+        "Step 3: Initiate Software Image Management",
+        "Step 4: Name the Update Task",
+        "Step 5: Review Navigation Options",
+        "Step 6: Select Software Image Version",
+        "Step 7: Perform Readiness Check",
+        "Step 8: Review and Close Readiness Report",
+        "Step 9: Configure Schedule and Activation Options",
+        "Step 10: Confirm and Schedule Distribution",
+        "Step 11: Monitor Image Update Status",
+        "Step 12: Observe Distribution In-Progress",
+        "Step 13: Review Mixed Status Results",
+        "Step 14: Final Status Overview"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/swim-sequential/",
+      "title": "SWIM Sequential Device Updates",
+      "section": "provision",
+      "file": "pages/provision/swim-sequential.md",
+      "headings": [
+        "SWIM Sequential Device Updates"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/swim-error/",
+      "title": "SWIM - Software Image Management Error Scenario Guide",
+      "section": "provision",
+      "file": "pages/provision/swim-error.md",
+      "headings": [
+        "SWIM - Software Image Management Error Scenario Guide",
+        "Initiating a Software Image Update Task",
+        "Monitoring and Troubleshooting the Update"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/rma/",
+      "title": "RMA Device Replacement Usecase",
+      "section": "provision",
+      "file": "pages/provision/rma.md",
+      "headings": [
+        "RMA Device Replacement Usecase",
+        "Step 1: Navigate to Inventory",
+        "Step 2: Filter for Unreachable Devices",
+        "Step 3: Mark Device for Replacement",
+        "Step 4: Verify \"Ready for Replacement\" Status",
+        "Step 5: Initiate Device Replacement",
+        "Step 6: Choose Replacement Device",
+        "Step 7: Review Replacement Summary",
+        "Step 8: Schedule Replacement",
+        "Step 9: Perform Initial Checks",
+        "Step 10: Process Device List and Fetch Configuration",
+        "Step 11: Confirm Deployment",
+        "Step 12: Monitor In-Progress Replacement",
+        "Step 13: View In-Progress Details and Onboarding Status",
+        "Step 14: Verify Successful Replacement",
+        "Step 15: Review Replacement History"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/overall-health/",
+      "title": "Assurance – Overall Health: A Demo Guide",
+      "section": "assurance",
+      "file": "pages/assurance/overall-health.md",
+      "headings": [
+        "Assurance – Overall Health: A Demo Guide"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/client-assurance/",
+      "title": "Client Assurance",
+      "section": "assurance",
+      "file": "pages/assurance/client-assurance.md",
+      "headings": [
+        "Client Assurance",
+        "Overview",
+        "Step 1: Access the Client Assurance Dashboard",
+        "Step 2: Main Client Dashboard & Time-Level Filtering",
+        "Step 3: Wireless and Wired Dashlets",
+        "Step 4: Site Analytics Dashlet",
+        "Step 5: Client Onboarding Times Dashlet",
+        "Step 6: Connectivity Dashlet",
+        "Step 7: Connectivity SNR Dashlet",
+        "Step 8: Client Roaming Times",
+        "Step 9: Client Count Per SSID",
+        "Step 10: Connectivity Physical Link",
+        "Step 11: Client Table",
+        "Step 12: Client Count Per Band",
+        "Step 13: Client Per Rate",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/client360/",
+      "title": "Cisco Assurance: Client 360 Page Demo Guide",
+      "section": "assurance",
+      "file": "pages/assurance/client360.md",
+      "headings": [
+        "Cisco Assurance: Client 360 Page Demo Guide",
+        "Accessing the Client 360 Page",
+        "Client 360 Global Graph",
+        "Summary Dashlet",
+        "Issue Dashlet",
+        "Onboarding Dashlet",
+        "Event Viewer",
+        "Application Experience",
+        "Detailed Information",
+        "Special Client Cases"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/user360/",
+      "title": "User 360 Demo Guide",
+      "section": "assurance",
+      "file": "pages/assurance/user360.md",
+      "headings": [
+        "User 360 Demo Guide",
+        "Introduction",
+        "Accessing and Navigating User360"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/device360/",
+      "title": "Device 360 Overview",
+      "section": "assurance",
+      "file": "pages/assurance/device360.md",
+      "headings": [
+        "Introduction",
+        "Step 1: Accessing the Health Tab",
+        "Step 2: Opening the Network Tab",
+        "Step 3: Navigating to the Device 360 Page",
+        "Step 4: Viewing Device Health and Details",
+        "Step 5: Exploring Physical Neighbor Topology",
+        "Step 6: Using the Event Viewer Tab",
+        "Step 7: Reviewing Device Details by Device Type",
+        "Step 8: Using the Tools Tab for Access Points",
+        "Step 9: Using the Ping Tool",
+        "Step 10: Using the Trace Route Tool",
+        "Step 11: AP Data Collection",
+        "Step 12: AP Reboot",
+        "Step 13: Radio Reset",
+        "Step 14: Flash LED"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/device360-int/",
+      "title": "Device 360",
+      "section": "assurance",
+      "file": "pages/assurance/device360-int.md",
+      "headings": [
+        "Device 360",
+        "Introduction",
+        "Part 1: Switch Device",
+        "Part 2: WLC Device",
+        "Part 3: AP Device",
+        "Summary"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/ssid-monitoring/",
+      "title": "SSID Monitoring Settings in Assurance",
+      "section": "assurance",
+      "file": "pages/assurance/ssid-monitoring.md",
+      "headings": [
+        "SSID Monitoring Settings in Assurance",
+        "Introduction",
+        "Navigating to SSID Monitoring Settings",
+        "Data Source",
+        "Reference Screenshot",
+        "Summary"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/msteams/",
+      "title": "Microsoft Teams 360 Demo Guide",
+      "section": "assurance",
+      "file": "pages/assurance/msteams.md",
+      "headings": [
+        "Microsoft Teams 360 Demo Guide",
+        "Step 1: Access the User 360 Page for the Target User",
+        "Step 2: Navigate to the MS Teams 360 Section",
+        "Step 3: View Meeting Details and Audio Quality",
+        "Step 4: Analyze Video Quality Metrics",
+        "Step 5: Review Sharing Quality Metrics",
+        "Step 6: Exit the MS Teams 360 View"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/webex/",
+      "title": "Webex 360 Demo Guide",
+      "section": "assurance",
+      "file": "pages/assurance/webex.md",
+      "headings": [
+        "Webex 360 Demo Guide",
+        "Introduction",
+        "Step 1: Accessing a User's Client 360 Profile",
+        "Step 2: Navigating to Webex 360",
+        "Step 3: Searching for the User within Webex 360",
+        "Step 4: Displaying Recent Meeting Details",
+        "Step 5: Selecting a Specific Meeting for Analysis",
+        "Step 6: Analyzing Audio Quality Metrics",
+        "Step 7: Reviewing Video Quality Metrics",
+        "Step 8: Checking Share Quality Metrics",
+        "Step 9: Concluding the Analysis"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/app-health/",
+      "title": "Cisco Assurance Dashboard: Applications Health Tab",
+      "section": "assurance",
+      "file": "pages/assurance/app-health.md",
+      "headings": [
+        "Cisco Assurance Dashboard: Applications Health Tab",
+        "Introduction",
+        "Step 1: Navigate to the Health Tab",
+        "Step 2: Access the Applications Tab",
+        "Step 3: Review Application Health Overview",
+        "Step 4: Explore the Applications Table",
+        "Step 5: Application 360 Page",
+        "Step 6: View Exporter Devices for the Application",
+        "Step 7: Examine ThousandEyes Test Details",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/event-analytics/",
+      "title": "Cisco Catalyst Center: Event Analytics",
+      "section": "assurance",
+      "file": "pages/assurance/event-analytics.md",
+      "headings": [
+        "Cisco Catalyst Center: Event Analytics",
+        "Introduction",
+        "What is Event Analytics?",
+        "Supported Event Types",
+        "Event Analytics Workflow",
+        "event analytics preview is missing",
+        "Key Takeaways"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/events/",
+      "title": "Navigating the Assurance Dashboard – Issues and Events",
+      "section": "assurance",
+      "file": "pages/assurance/events.md",
+      "headings": [
+        "Navigating the Assurance Dashboard – Issues and Events",
+        "Introduction",
+        "Step 1: Access the Issues and Events Dashboard",
+        "Step 2: Open the Events Tab",
+        "Step 3: Analyze Events by Time Interval",
+        "Step 4: View Detailed Event Table",
+        "Step 5: Review Event Details",
+        "Summary"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/issues/",
+      "title": "Cisco Assurance: Issues and Events",
+      "section": "assurance",
+      "file": "pages/assurance/issues.md",
+      "headings": [
+        "Cisco Assurance: Issues and Events",
+        "Introduction",
+        "Table of Contents",
+        "1. Viewing Issues and Events",
+        "2. Understanding the Issues Table",
+        "3. Investigating Specific Issue Types",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/ai-issues/",
+      "title": "AI-Driven Issues",
+      "section": "assurance",
+      "file": "pages/assurance/ai-issues.md",
+      "headings": [
+        "AI-Driven Issues",
+        "Introduction",
+        "AI-Driven Issues Overview",
+        "Benefits of AI-Driven Anomaly Detection",
+        "AI-Driven Issue Types",
+        "Using the Assurance Issue Dashboard",
+        "Investigating AI-Driven Issues",
+        "Key Takeaways",
+        "Step-by-Step Use Case Workflows",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/baselines/",
+      "title": "AI-Driven Baseline Dashboard",
+      "section": "assurance",
+      "file": "pages/assurance/baselines.md",
+      "headings": [
+        "AI-Driven Baseline Dashboard",
+        "Introduction",
+        "Benefits",
+        "Workflow Overview",
+        "Getting Started",
+        "Building Overview and Selection",
+        "Exploring Building Baseline Views",
+        "KPI Detailed View",
+        "Key Takeaways"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/heatmap/",
+      "title": "Cisco Catalyst Center: Network Heatmap Page Demo Guide",
+      "section": "assurance",
+      "file": "pages/assurance/heatmap.md",
+      "headings": [
+        "Cisco Catalyst Center: Network Heatmap Page Demo Guide",
+        "Part 1: Access Points",
+        "Part 2: Switches"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/site-analytics/",
+      "title": "Site Analytics Demo Guide",
+      "section": "assurance",
+      "file": "pages/assurance/site-analytics.md",
+      "headings": [
+        "Site Analytics Demo Guide",
+        "Introduction",
+        "Site Hierarchy Overview",
+        "Navigating Site Analytics"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/peer-compare/",
+      "title": "Cisco Assurance: Peer Comparison Demo Guide",
+      "section": "assurance",
+      "file": "pages/assurance/peer-compare.md",
+      "headings": [
+        "Cisco Assurance: Peer Comparison Demo Guide",
+        "Peer Comparison Walkthrough"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/poe/",
+      "title": "Cisco Assurance – Power over Ethernet (PoE)",
+      "section": "assurance",
+      "file": "pages/assurance/poe.md",
+      "headings": [
+        "Cisco Assurance – Power over Ethernet (PoE)",
+        "Introduction",
+        "Step 1: Navigate to the PoE Dashboard",
+        "Step 2: Explore PoE Dashboard Overview",
+        "Step 3: Review PoE Dashboard Dashlets",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/network-services/",
+      "title": "Network Services Assurance - DNS Demo Guide",
+      "section": "assurance",
+      "file": "pages/assurance/network-services.md",
+      "headings": [
+        "Network Services Assurance - DNS Demo Guide",
+        "Step 1: Navigating to DNS Network Services Assurance",
+        "Step 2: Exploring DNS Server Details"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/ap-perf/",
+      "title": "AP Performance Advisories",
+      "section": "assurance",
+      "file": "pages/assurance/ap-perf.md",
+      "headings": [
+        "AP Performance Advisories",
+        "Introduction",
+        "Table of Contents",
+        "Overview",
+        "Benefits",
+        "How the AP Performance Advisory Feature Works",
+        "Demo Workflow",
+        "Key Takeaways",
+        "Additional Use Case: High AP Density at 2.4GHz"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/wifi6/",
+      "title": "Wi-Fi 6 & Wi-Fi 6E",
+      "section": "assurance",
+      "file": "pages/assurance/wifi6.md",
+      "headings": [
+        "Wi-Fi 6 & Wi-Fi 6E",
+        "Table of Contents",
+        "1. Wi-Fi 6E Data",
+        "2. Assurance and Insights for Wi-Fi 6",
+        "3. Client Distribution by Capability",
+        "4. Network Readiness",
+        "5. AP Distribution Protocol",
+        "6. Wireless Airtime Efficiency",
+        "7. Wireless Latency by Client Count",
+        "Notes"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/wifi7/",
+      "title": "Wi-Fi 7 Demo Guide: Showcasing Advanced Wireless Capabilities",
+      "section": "assurance",
+      "file": "pages/assurance/wifi7.md",
+      "headings": [
+        "Wi-Fi 7 Demo Guide: Showcasing Advanced Wireless Capabilities",
+        "Introduction",
+        "A) Use Case: Grace Smith (Wireless – User 360)",
+        "B) Use Case: Inventory Management for Wi-Fi 7 Devices",
+        "C) Use Case: Device 360 Page – Physical Neighbor Topology"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/policy/ai-epa/",
+      "title": "AI Endpoint Analytics Spoofing Detection",
+      "section": "policy",
+      "file": "pages/policy/ai-epa.md",
+      "headings": [
+        "AI Endpoint Analytics Spoofing Detection",
+        "Introduction",
+        "Table of Contents",
+        "1. Reset Trust Score",
+        "2. Apply ANC Policy",
+        "3. Manage Endpoint Hierarchy",
+        "4. Other Supported Pages",
+        "Notes"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/policy/anc/",
+      "title": "Policy Endpoint Overview",
+      "section": "policy",
+      "file": "pages/policy/anc.md",
+      "headings": [
+        "Policy Endpoint Overview",
+        "1. AI Policy Endpoint Overview",
+        "2. Selecting Endpoints with Low Trust Score",
+        "3. Applying the ANC Policy",
+        "4. Resetting the Trust Score",
+        "Summary"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/policy/epa-grouping/",
+      "title": "AI Endpoint Analytics Smart Grouping",
+      "section": "policy",
+      "file": "pages/policy/epa-grouping.md",
+      "headings": [
+        "AI Endpoint Analytics Smart Grouping",
+        "Introduction",
+        "Understanding Smart Grouping & AI Proposals",
+        "Part 1: Accepting and Reviewing AI-Proposed Endpoint Groups",
+        "Part 2: Rejecting AI-Proposed Endpoint Groups",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/feedback/",
+      "title": "Demo Guide Feedback",
+      "section": "home",
+      "file": "pages/feedback.md",
+      "headings": []
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/awips/",
+      "title": "Using Rogue & AWIPS for Threat Containment",
+      "section": "assurance",
+      "file": "pages/assurance/awips.md",
+      "headings": [
+        "Using Rogue & AWIPS for Threat Containment",
+        "Introduction",
+        "1. Supported Pages & Initial Steps",
+        "2. Assurance – Rogue & AWIPS Overview",
+        "3. Identifying Threats",
+        "4. Starting Containment",
+        "5. Managing Allowed List",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/enable-apps/",
+      "title": "Enabling ThousandEyes Enterprise Agent App on Switches",
+      "section": "assurance",
+      "file": "pages/assurance/enable-apps.md",
+      "headings": [
+        "Enabling ThousandEyes Enterprise Agent App on Switches",
+        "Introduction",
+        "Steps to Enable ThousandEyes Enterprise Agent App",
+        "Notes"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/enhanced-rrm/",
+      "title": "AI Enhanced RRM",
+      "section": "assurance",
+      "file": "pages/assurance/enhanced-rrm.md",
+      "headings": [
+        "AI Enhanced RRM",
+        "Introduction",
+        "Key Features",
+        "Step-by-Step Instructions",
+        "13. Verify AI Enhanced RRM Dashlets",
+        "Notes and Known Issues",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/event-analytics-use/",
+      "title": "Cisco Catalyst Center: Event Analytics",
+      "section": "assurance",
+      "file": "pages/assurance/event-analytics-use.md",
+      "headings": [
+        "Cisco Catalyst Center: Event Analytics",
+        "Introduction",
+        "1. Overview of Event Analytics",
+        "2. Supported Event Types",
+        "3. Accessing the Event Analytics Dashboard",
+        "4. Using Event Analytics",
+        "5. Detailed Event Exploration",
+        "6. Wireless Event Analytics",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/intelligent-capture-360/",
+      "title": "Intelligent Capture Device360",
+      "section": "assurance",
+      "file": "pages/assurance/intelligent-capture-360.md",
+      "headings": [
+        "Intelligent Capture Device360",
+        "Introduction",
+        "Part 1: RF Statistics",
+        "Part 2: Spectrum Analysis",
+        "Notes"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/intelligent-capture/",
+      "title": "Intelligent Capture",
+      "section": "assurance",
+      "file": "pages/assurance/intelligent-capture.md",
+      "headings": [
+        "Intelligent Capture",
+        "Overview",
+        "Table of Contents",
+        "1. Accessing Client 360 via Assurance Dashboard",
+        "2. Accessing Client 360 via Global Search",
+        "3. Floor-Level Heat Map & Live Tracking",
+        "Additional Visual Reference",
+        "Notes"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/iot-services-app/",
+      "title": "IoT Services – App Hosting on Cisco Catalyst 9100 Series Access Points",
+      "section": "assurance",
+      "file": "pages/assurance/iot-services-app.md",
+      "headings": [
+        "IoT Services – App Hosting on Cisco Catalyst 9100 Series Access Points",
+        "Introduction",
+        "Step-by-Step Instructions"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/network-health-use/",
+      "title": "Cisco Assurance Dashboard",
+      "section": "assurance",
+      "file": "pages/assurance/network-health-use.md",
+      "headings": [
+        "Cisco Assurance Dashboard",
+        "Introduction",
+        "Step-by-Step Guide",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/ota-sniffing/",
+      "title": "OTA (Over-The-Air) Sniffing",
+      "section": "assurance",
+      "file": "pages/assurance/ota-sniffing.md",
+      "headings": [
+        "OTA (Over-The-Air) Sniffing",
+        "Introduction",
+        "Step 1: Access the Device 360 Page",
+        "Step 2: Start the OTA Capture",
+        "Step 3: Select Access Points",
+        "Step 4: Configure Capture Parameters",
+        "Step 5: Apply Capture Settings",
+        "Step 6: Perform Initial Checks",
+        "Step 7: Review Device Configuration and Deploy",
+        "Step 8: Submit and Run the Capture",
+        "Step 9: Monitor Capture Progress",
+        "Step 10: View Capture History",
+        "Step 11: Stop the Capture and Access Results",
+        "Step 12: Download the Capture File",
+        "Step 13: View OTA Sniffing Progress in Assurance",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/assurance/pathtrace/",
+      "title": "Path Trace_User360",
+      "section": "assurance",
+      "file": "pages/assurance/pathtrace.md",
+      "headings": [
+        "Path Trace_User360",
+        "Overview",
+        "Steps",
+        "Notes"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/policy/gbac/",
+      "title": "Cisco GBAC Policy Management Demo Guide",
+      "section": "policy",
+      "file": "pages/policy/gbac.md",
+      "headings": [
+        "Cisco GBAC Policy Management Demo Guide",
+        "Introduction",
+        "Table of Contents",
+        "1. Overview - Security Group",
+        "2. Viewing Group Details",
+        "3. Editing and Creating Contract Policies",
+        "4. Overview - ISE Profiles",
+        "5. Overview - StealthWatch Host Groups",
+        "6. Policy Management",
+        "7. Editing Policy Contracts",
+        "8. Security Group and Access Contract",
+        "9. Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/policy/qos/",
+      "title": "Application QoS",
+      "section": "policy",
+      "file": "pages/policy/qos.md",
+      "headings": [
+        "Application QoS",
+        "Table of Contents",
+        "1. Accessing Application Policies",
+        "2. Viewing Deployment Status",
+        "3. Analyzing Device Results",
+        "4. Exploring Queuing Profiles",
+        "Summary"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/brownfield_automation/",
+      "title": "Brownfield Automation",
+      "section": "provision",
+      "file": "pages/provision/brownfield_automation.md",
+      "headings": [
+        "Brownfield Automation",
+        "1. VLAN Configuration",
+        "2. Port Configuration",
+        "Conclusion"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/fabric/",
+      "title": "Enabling Edge Role for London1 – 2nd Floor Device",
+      "section": "provision",
+      "file": "pages/provision/fabric.md",
+      "headings": [
+        "Enabling Edge Role for London1 – 2nd Floor Device",
+        "Steps to Enable Edge Role",
+        "Summary"
+      ]
+    },
+    {
+      "url": "https://networkingtoolbox.cisco.com/guides/catalyst-center-instant-demo-3-2/provision/fiab/",
+      "title": "Fabric In a Box (FIAB)",
+      "section": "provision",
+      "file": "pages/provision/fiab.md",
+      "headings": [
+        "Fabric In a Box (FIAB)",
+        "Introduction",
+        "1. Accessing the Fabric Site",
+        "2. Configuring Device Roles in the Fabric Tab",
+        "3. Creating an Anycast Gateway",
+        "4. Wireless SSID Attachment to Virtual Networks",
+        "Conclusion"
+      ]
+    }
+  ],
+  "failed": []
+}
