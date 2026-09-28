@@ -237,3 +237,10 @@ connecté sur **PseudoCo-Corp en 6 GHz**, AP CW9178I, WLC `LDN1-C9800-01`, score
 - Les noms d'AP diffèrent légèrement selon les écrans (CW9178I-LDN1-01, CW9166I-LDN1-01…) : l'histoire tient car **tout est London 1 / 1st Floor / PseudoCo-Corp / 2.4 GHz**.
 
 *Sources : guide public Catalyst Center 3.2 Instant Demo (networkingtoolbox.cisco.com) — pages Client 360, User 360, Issues, AI-Driven Issues, AP Performance Advisories, Intelligent Capture, OTA Sniffing, AI Enhanced RRM, Baselines, AI Assistant.*
+
+---
+
+## Contenu du repo
+
+- `README.md` — ce script de démo
+- [`catalyst-center-kb/`](catalyst-center-kb/) — scraper et base de connaissances Markdown du guide Catalyst Center 3.2 Instant Demo (captures non incluses, régénérables avec `scrape.py --images`)
