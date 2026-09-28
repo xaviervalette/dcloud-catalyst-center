@@ -40,18 +40,25 @@ Onglets à pré-ouvrir (gain de temps) : Home · Assurance > Issues and Events �
 
 ## Acte 1 — « Qui et quand ? » : partir du ticket (6 min)
 
-### 1.1 Demander à l'assistant IA (accroche, 1 min)
+### 1.1 Demander à l'assistant IA… et se faire piéger (1 min 30)
 
 🖱️ Ouvrir **AI Assistant** → catégorie *Troubleshooting* → **« Troubleshoot a specific client »** → à la question de suivi, taper **`grace smith`**.
 
-> 🎤 « Premier réflexe, je n'ai qu'un nom dans le ticket. Pas d'adresse MAC, pas d'IP. Je demande à l'assistant. Il retrouve la personne, ses équipements, et me donne une première lecture. Mais un ingé réseau veut voir les données — on descend. »
+L'assistant répond sur **un seul équipement : `Grace.Smith-iPhone`** (« Showing 1 of 1 device(s) found ») :
+connecté sur **PseudoCo-Corp en 6 GHz**, AP CW9178I, WLC `LDN1-C9800-01`, score **8**, RSSI -50 dBm, SNR 39 dB, 674 Mbps, 0 % de retry, aucune déconnexion ni échec d'auth/DHCP sur 24 h → *« No action is required at this time. »*
+
+> 🎤 « Premier réflexe, je n'ai qu'un nom dans le ticket. Pas d'adresse MAC, pas d'IP. Je demande à l'assistant… et il me répond que **tout va bien** : RSSI -50, 674 Mbps, aucune erreur, rien à faire.
+> Vous voyez le piège ? C'est exactement ce qui se passe au helpdesk : *"j'ai regardé, votre connexion est parfaite"*. Oui — **l'iPhone** de Grace, en 6 GHz, va très bien. Mais le ticket parle de **l'iPad**.
+> L'assistant est un excellent point d'entrée, il a trouvé la personne, le site, le WLC en deux secondes. Mais la bonne question, c'est **quel équipement** et **à quel moment**. Et pour ça, on descend dans les données. »
+
+> 💡 **Ne pas cacher ce moment, l'exploiter** : c'est la transition naturelle vers User 360. Si l'audience est sceptique sur l'IA, c'est même un point de crédibilité : on montre l'outil tel qu'il est et comment l'ingé garde la main.
 
 ### 1.2 User 360 : une personne, plusieurs équipements
 
 🖱️ **Recherche globale** (loupe) → `Grace Smith` → ouvrir le résultat → **Client 360 de `Grace.Smith-iPad`**.
 🖱️ Onglet **User Defined Network** (bas de page).
 
-> 🎤 « Catalyst Center raisonne en **utilisateur**, pas en adresse MAC : Grace Smith a **5 équipements** connectés — iPad, MacBook Pro, Galaxy, iPhone, PC. Celui qui pose problème, c'est l'iPad. »
+> 🎤 « Catalyst Center raisonne en **utilisateur**, pas en adresse MAC : Grace Smith a **5 équipements** connectés — iPad, MacBook Pro, Galaxy, iPhone, PC. L'iPhone qu'on vient de voir va bien. Celui qui pose problème, c'est l'iPad — et lui est en **2.4 GHz**. »
 
 ### 1.3 La timeline : remonter dans le temps
 
@@ -199,7 +206,7 @@ Onglets à pré-ouvrir (gain de temps) : Home · Assurance > Issues and Events �
 
 ## Version courte (10 min)
 
-1. Contexte ticket Grace Smith (1 min)
+1. Contexte ticket Grace Smith + AI Assistant qui répond « tout va bien » sur l'iPhone (1 min 30)
 2. Client 360 `Grace.Smith-iPad` : timeline de la nuit + Issue P1 + RSSI OK (3 min)
 3. AI Issue *Excessive failures to connect* : 8 clients, Top APs, Network Causes AAA/DHCP (3 min)
 4. Machine Reasoning sur *AAA Server Rejected Clients* : ❌ RADIUS (2 min)
@@ -226,6 +233,7 @@ Onglets à pré-ouvrir (gain de temps) : Home · Assurance > Issues and Events �
 - Le dashlet **Summary** de User 360 est **statique** (identique pour tous les clients) : ne pas s'y attarder.
 - Seuls `Grace.Smith-iPad` et `Grace Smith Galaxy-S23` ont des **issues** dans Client 360 ; les autres affichent « no data ».
 - L'AI Assistant ne répond qu'aux prompts listés dans le guide (dont « Troubleshoot a specific client » → `grace smith` et « Troubleshoot a specific access point » → `CW9178I-LDN1-01`).
+- Sur `grace smith`, l'assistant analyse **l'iPhone** (sain, 6 GHz), pas l'iPad : c'est voulu dans le script (acte 1.1), ne pas chercher à obtenir l'iPad via l'assistant.
 - Les noms d'AP diffèrent légèrement selon les écrans (CW9178I-LDN1-01, CW9166I-LDN1-01…) : l'histoire tient car **tout est London 1 / 1st Floor / PseudoCo-Corp / 2.4 GHz**.
 
 *Sources : guide public Catalyst Center 3.2 Instant Demo (networkingtoolbox.cisco.com) — pages Client 360, User 360, Issues, AI-Driven Issues, AP Performance Advisories, Intelligent Capture, OTA Sniffing, AI Enhanced RRM, Baselines, AI Assistant.*
