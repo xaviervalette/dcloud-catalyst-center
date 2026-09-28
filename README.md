@@ -127,11 +127,22 @@ connecté sur **PseudoCo-Corp en 6 GHz**, AP CW9178I, WLC `LDN1-C9800-01`, score
 
 > 🎤 « Et des actions concrètes : vérifier la charge du serveur AAA, la réponse DHCP, le CPU du WLC. Ce n'est pas l'IA qui décide — c'est l'IA qui vous fait gagner les 2 premières heures d'enquête. »
 
-### 2.4 (Option) Le détail chiffré d'une connexion
+### 2.4 Retour au ticket de Grace : la vue 7 jours
 
-🖱️ Retour **Issues** → désactiver **AI-Driven**, passer la plage de temps sur **7 days** (sinon l'issue n'apparaît pas) → **Wireless client took a long time to connect (… CW9166I-LDN1-01, 2.4 GHz) – Excessive time due to Association failures** → ouvrir l'instance.
+🖱️ Retour **Issues** → désactiver **AI-Driven**, onglet **All**, plage de temps **7 days**.
 
-> 🎤 « Le détail d'une seule connexion : **123 secondes** pour se connecter, au lieu de moins de 10. Auth : 1,4 s, IP : 1,2 s — ce n'est donc pas une lenteur, ce sont des **échecs puis des retries**. Et la suggestion n°4 pointe déjà le serveur AAA **192.168.139.168** pendant la MAC Authentication. »
+La liste passe à **9 P1**. Aux 4 filaires s'ajoutent notamment *WLC unreachable*, *Fabric Devices Connectivity – ISE Server*, *StackWise Virtual Link has failed* et surtout :
+**P1 – Wireless client took a long time to connect (SSID: PseudoCo-Corp, AP: CW9178I-LDN1-01, Band: 2.4 GHz) – Excessive time due to Association failures**
+
+> 🎤 « Sur 7 jours, le ticket de Grace remonte **en P1** : même SSID, même AP **CW9178I-LDN1-01**, même bande 2.4 GHz que dans son Client 360. Ce n'est pas un simple ressenti, c'est un incident priorisé par la plateforme. »
+
+🖱️ Ouvrir l'issue → l'instance → **Description** + **Suggested Actions**.
+
+> 🎤 « Le détail d'une connexion : durée totale d'onboarding versus la durée attendue, découpée par étape — association, authentification, adressage IP. Les étapes prises une à une sont rapides : ce n'est donc pas une lenteur, ce sont des **échecs puis des retries**. Et les actions suggérées pointent déjà le serveur AAA pendant la MAC Authentication. »
+
+> ⚠️ Chiffres à relever sur votre instance avant la démo. Dans le guide (capture de l'AP CW9166I-LDN1-01) : onboarding **123,4 s** au lieu de < 10 s, auth 1,4 s, IP 1,2 s, AAA **192.168.139.168**.
+
+> 💡 **Accroche optionnelle** : la P1 *Fabric Devices Connectivity – ISE Server* est visible dans la même liste. Pour une audience avancée : « Tiens, un problème de connectivité vers ISE… et nos clients échouent en AAA. On va vérifier. » → enchaîner sur l'acte 3. (Lien narratif, pas une corrélation démontrée par l'outil.)
 
 ---
 
@@ -244,7 +255,7 @@ connecté sur **PseudoCo-Corp en 6 GHz**, AP CW9178I, WLC `LDN1-C9800-01`, score
 - Le dashlet **Summary** de User 360 est **statique** (identique pour tous les clients) : ne pas s'y attarder.
 - Seuls `Grace.Smith-iPad` et `Grace Smith Galaxy-S23` ont des **issues** dans Client 360 ; les autres affichent « no data ».
 - L'AI Assistant ne répond qu'aux prompts listés dans le guide (dont « Troubleshoot a specific client » → `grace smith` et « Troubleshoot a specific access point » → `CW9178I-LDN1-01`).
-- Dans **Issues**, le filtre **P1** ne montre que 4 issues filaires : les issues wireless sont en **P2 (AI-Driven)** et **P3**. Les issues *long time to connect* et *AAA Server Rejected* demandent la plage **7 days**.
+- Dans **Issues**, sur **24 h** le filtre **P1** ne montre que 4 issues filaires ; les issues wireless IA sont en **P2 (AI-Driven)**. Sur **7 days**, on passe à 9 P1 dont la P1 wireless de Grace (CW9178I-LDN1-01), et l'issue *AAA Server Rejected* (P3) devient visible.
 - Sur `grace smith`, l'assistant analyse **l'iPhone** (sain, 6 GHz), pas l'iPad : c'est voulu dans le script (acte 1.1), ne pas chercher à obtenir l'iPad via l'assistant.
 - Les noms d'AP diffèrent légèrement selon les écrans (CW9178I-LDN1-01, CW9166I-LDN1-01…) : l'histoire tient car **tout est London 1 / 1st Floor / PseudoCo-Corp / 2.4 GHz**.
 
