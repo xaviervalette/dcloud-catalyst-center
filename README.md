@@ -143,7 +143,7 @@ P1 : *Wireless client took a long time to connect (SSID: PseudoCo-Corp, AP: CW91
 
 > 🎤 « Soyons précis. Un rejet RADIUS, ça veut dire que le serveur répond : il dit non. Ce n'est pas un serveur mort. Ce qu'on a démontré : une dégradation intermittente des services partagés (AAA et DHCP) pendant la nuit, qui touche tout l'étage, toutes les bornes, tous les terminaux. Le Wi-Fi est la victime, pas le coupable. Pourquoi l'ISE et le DHCP ont décroché cette nuit, c'est la prochaine question. Mais je la pose à la bonne équipe, avec un dossier complet, en 15 minutes au lieu de deux jours. »
 
-*Note pour les avancés : la liste des P1 sur 7 jours contient aussi *Fabric Devices Connectivity · ISE Server*. On peut la citer comme piste à creuser, pas comme une corrélation démontrée par l'outil.*
+*Note pour les avancés : la liste des P1 sur 7 jours contient aussi « Fabric Devices Connectivity · ISE Server ». On peut la citer comme piste à creuser, pas comme une corrélation démontrée par l'outil.*
 
 > Mais pourquoi ce 1er étage est-il aussi fragile ?
 
