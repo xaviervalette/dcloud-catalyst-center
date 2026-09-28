@@ -607,6 +607,7 @@ Sources : guide public [Catalyst Center 3.2 Instant Demo](https://networkingtool
 
 **Contenu du repo**
 
-- `README.md` : ce script de démo
+- `README.md` : ce script de démo (scénario A, troubleshooting d'un ticket wireless)
+- [`scenario-b-wifi-proactif/`](scenario-b-wifi-proactif/) : scénario B, la revue Wi-Fi proactive du lundi matin
 - `docs/img/` : captures de référence utilisées dans le script
 - [`catalyst-center-kb/`](catalyst-center-kb/) : scraper et base de connaissances Markdown du guide (captures complètes non incluses, régénérables avec `scrape.py --images`)
